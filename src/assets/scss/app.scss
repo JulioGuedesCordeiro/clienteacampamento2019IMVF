@@ -1,0 +1,93 @@
+@import 'variavel.scss';
+
+$--color-primary: $--theme-color;
+$font-family-base: $--font-family;
+$font-size-base: $--font-size;
+$--color-primary: $--theme-color;
+$font-family-base: $--font-family;
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
+@import 'custom-bootstrap.scss';
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@for $i from 1 through 100 {
+  @if( $i % 5 == 0 ) {
+      .px-#{$i} {
+          padding-right: #{$i}px !important;
+          padding-left: #{$i}px !important;
+      }
+  }
+}
+
+@for $i from 1 through 100 {
+  @if( $i % 5 == 0 ) {
+      .py-#{$i} {
+          padding-top: #{$i}px !important;
+          padding-bottom: #{$i}px !important;
+      }
+  }
+}
+
+.min-h-fullscreen {
+  min-height: 100vh !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  outline: 0;
+}
+
+a + button {
+  margin-left: 1rem !important;
+}
+
+.el-form--label-top .el-form-item__label {
+  padding: 10px 0 2px 0;
+  line-height: 0px;
+  font-size: $--font-size;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.danger-icon {
+  color: rgb(245, 108, 108);;
+  font-size: 2em;
+}
+.danger-icon:hover {
+  color: #f78989;
+}
+
+.el-collapse-item__header {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.el-collapse-item__wrap {
+  width: 100%;
+  padding: 10px;
+}
+
+.nav-link {
+  padding-left: 10px !important;
+}
+
+.dropdown-item.active {
+  border-radius: 0 !important;
+}
+
+.tab-error {
+  color: #f56c6c !important;
+  font-weight: bold;
+}
+
+.el-input-number.is-controls-right[class*=small] [class*=increase], .el-input-number.is-controls-right[class*=small] [class*=decrease] {
+  line-height: 13px;
+}

@@ -1,0 +1,25 @@
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+
+$theme-colors: (
+  "primary": #26384C,
+);
+
+.el-dialog__header {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.el-form-item label {
+  line-height: 16px;
+}
+
+.el-input-group__prepend {
+  background-color: #fff;
+}
+
+.el-select .el-input {
+  width: 100% !important;
+}
+
+@import '~bootstrap/scss/bootstrap';
+
